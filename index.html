@@ -13,22 +13,24 @@
     <div class="container">
       <div class="jumbotron center bold">
         <h1>So you want to be a Programmer?</h1>
-        <p>Take the quiz below to help determine which track at Epicodus would best suit your goals!</p>
+        <p>Take the survey below to help determine which track at Epicodus would best suit your goals!</p>
       </div>
 <!-- START ***FORM*** -->
       <form id="survey">
-        <div class="form-group">
-          <label for="name">Your name:</label>
-          <input id="name" type="text" placeholder="First Last">
-        </div>
-        <div class="form-group">
-          <label for="email">Your email:</label>
-          <input id="email" type="text" placeholder="Email@example.com">
-        <div class="form-group">
-          <label class="checkbox check-style">
-            <input type="checkbox" class="check-style">I would like to receive more information about Epicodus.
-          </label>
-          <button type="submit" class="btn btn-danger">Get Info!</button>
+        <div id="userInfo">
+          <div class="form-group">
+            <label for="name">Your name:</label>
+            <input id="name" type="text" placeholder="First name">
+          </div>
+          <div class="form-group">
+            <label for="email">Your email:</label>
+            <input id="email" type="text" placeholder="Email@example.com">
+          <div class="form-group">
+            <label class="checkbox check-style">
+              <input type="checkbox" class="check-style">I would like to receive more information about Epicodus.
+            </label>
+            <button id="buttonSubmit"type="submit" class="btn btn-danger">Get Info!</button>
+          </div>
         </div>
 
 <!-- START Q1: Frontend/Backend -->
@@ -179,8 +181,28 @@
           </div>
           <button id="buttonFive" class="btn btn-primary" type="button">Next Question</button>
         </div>
-
       </form> <!-- END ***FORM*** -->
+
+      <h2 class="intro">You should check out the Part-Time Evening Introductory program, <span class="name center"></span>!</h2>
+      <img class="intro" src="img/intro.png" alt="Image of CSS word-map.">
+      <p class="intro">This course is for beginners to learn the fundamentals of programming. After completing this course, you'll be able to build basic web pages and understand programming fundamentals. No coding experience is required, but computer proficiency is necessary.</p>
+
+      <h2 class="ccSS">You should check out the CSS/Design program, <span class="name center"></span>!</h2>
+      <img class="ccSS" src="img/css.png" alt="Image of CSS word-map.">
+      <p class="ccSS">CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language.</p>
+
+      <h2 class="cSharp"> You should check out the C#/.Net program, <span class="name center"></span>!</h2>
+      <img class="cSharp" src="img/csharp.png" alt="The C Sharp programming language logo">
+      <p class="cSharp">C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
+
+      <h2 class="java"> You should check out the Java/Android program, <span class="name center"></span>!</h2>
+      <img class="java" src="img/java.jpg" alt="The Java programming language logo">
+      <p class="java">Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
+
+      <h2 class="rrUby">You should check out the Ruby/Rails program, <span class="name center"></span>!</h2>
+      <img class="rrUby" src="img/ruby.jpg" alt="The ruby programming language logo">
+      <p class="rrUby">Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
+
     </div> <!-- END Container -->
   </body>
 </html>
