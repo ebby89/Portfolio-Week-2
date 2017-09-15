@@ -44,10 +44,14 @@ $(document).ready(function(event){   /* INITIAL DOC */
     var whyCode = parseInt($("input:radio[name=whyCode]:checked").val());
     var people = parseInt($("input:radio[name=people]:checked").val());
     var schedule = parseInt($("input:radio[name=schedule]:checked").val());
+    var userName = $("input#name").val();
 /* Check schedule for automatic "Intro" result */
     if (schedule === 1) {
       $(".intro").show();
-      $(".name").text();
+      $(".name").text(userName);
+    } else if (frontBack === 1) {
+      $(".ccSS").show();
+      $(".name").text(userName);
     }
   }); /* SURVEY FORM */
 
