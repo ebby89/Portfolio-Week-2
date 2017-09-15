@@ -17,6 +17,7 @@ $(document).ready(function(event){   /* INITIAL DOC */
     $("#qThree").hide();
     $("#qFour").hide();
     $("#qFive").hide();
+    $("button#buttonRestart").fadeOut();
   });
   $("button#buttonTwo").click(function(){ /* Q2 */
     $("#qTwo").slideToggle();
@@ -38,14 +39,21 @@ $(document).ready(function(event){   /* INITIAL DOC */
     $("#headerFinal").slideToggle();
     $("#restart").slideToggle();
     event.preventDefault();
-
+/* Single input variables */
     var frontBack = parseInt($("input:radio[name=frontBack]:checked").val());
     var work = parseInt($("input:radio[name=work]:checked").val());
     var whyCode = parseInt($("input:radio[name=whyCode]:checked").val());
     var people = parseInt($("input:radio[name=people]:checked").val());
     var schedule = parseInt($("input:radio[name=schedule]:checked").val());
     var userName = $("input#name").val();
-/* Check schedule for automatic "Intro" result */
+/* Multi input variables */
+    var scoreOne
+    var scoreTwo
+    var scoreThree
+    var scoreFour
+    var scoreFive
+
+/* Check for overriding "Intro" or "CSS" results */
     if (schedule === 1) {
       $(".intro").show();
       $(".name").text(userName);
