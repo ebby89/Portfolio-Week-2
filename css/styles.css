@@ -32,6 +32,6 @@ font-weight: lighter;
   margin-top: 15px;
 }
 
-#headerFinal, #qOne, #qTwo, #qThree, #qFour, #qFive, .buttonHide, .intro, .ccSS, .cSharp, .java, .rrUby {
+#headerFinal, #qOne, #qTwo, #qThree, #qFour, #qFive, .buttonHide, .intro, .ccSS, .cSharp, .java, .rrUby, .ppHp {
   display: none;
 }

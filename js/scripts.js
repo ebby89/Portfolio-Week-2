@@ -46,19 +46,18 @@ $(document).ready(function(event){   /* INITIAL DOC */
     var people = parseInt($("input:radio[name=people]:checked").val());
     var schedule = parseInt($("input:radio[name=schedule]:checked").val());
     var userName = $("input#name").val();
-/* Multi input variables */
-    var scoreOne
-    var scoreTwo
-    var scoreThree
-    var scoreFour
-    var scoreFive
+/* Multi input variable -- Ignores weeder questions Q1 & Q5 */
+    var scoreResult = work + whyCode + people
 
 /* Check for overriding "Intro" or "CSS" results */
-    if (schedule === 1) {
+    if (schedule === 2) {
       $(".intro").show();
       $(".name").text(userName);
-    } else if (frontBack === 1) {
+    } else if (frontBack === 2) {
       $(".ccSS").show();
+      $(".name").text(userName);
+    } else if (scoreResult >= 5) {
+      $(".rrUby").show();
       $(".name").text(userName);
     }
   }); /* SURVEY FORM */
