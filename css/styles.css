@@ -1,3 +1,15 @@
 .center {
   text-align: center;
 }
+
+.bold {
+  font-weight: bolder;
+}
+
+.infoColor {
+  color: blue;
+}
+
+hr {
+  background-color: black;
+}
