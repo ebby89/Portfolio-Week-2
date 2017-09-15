@@ -4,7 +4,6 @@ $(document).ready(function(event){   /* INITIAL DOC */
   $("button#buttonSubmit").click(function(){ /* SUBMIT BUTTON */
     $("#qOne").fadeToggle();
     $("#userInfo").slideToggle();
-
   });
   $("button#buttonOne").click(function(){ /* Q1 */
     $("#qOne").slideToggle();
@@ -40,7 +39,16 @@ $(document).ready(function(event){   /* INITIAL DOC */
     $("#restart").slideToggle();
     event.preventDefault();
 
-
+    var frontBack = parseInt($("input:radio[name=frontBack]:checked").val());
+    var work = parseInt($("input:radio[name=work]:checked").val());
+    var whyCode = parseInt($("input:radio[name=whyCode]:checked").val());
+    var people = parseInt($("input:radio[name=people]:checked").val());
+    var schedule = parseInt($("input:radio[name=schedule]:checked").val());
+/* Check schedule for automatic "Intro" result */
+    if (schedule === 1) {
+      $(".intro").show();
+      $(".name").text();
+    }
   }); /* SURVEY FORM */
 
 });  /* INITIAL DOC */
