@@ -3,7 +3,8 @@ $(document).ready(function(event){   /* INITIAL DOC */
 /* Toggle between questions */
   $("button#buttonSubmit").click(function(){ /* SUBMIT BUTTON */
     $("#qOne").fadeToggle();
-    $("button#buttonSubmit").hide();
+    $("#userInfo").slideToggle();
+
   });
   $("button#buttonOne").click(function(){ /* Q1 */
     $("#qOne").slideToggle();
@@ -33,9 +34,13 @@ $(document).ready(function(event){   /* INITIAL DOC */
 
 /* Submit inputs & show result! */
   $("form#survey").submit(function(event){ /* SURVEY FORM */
-    alert("CONGRATS TESTING WORKED");
+    $("#qFive").slideToggle();
+    $("#headerStart").slideToggle();
+    $("#headerFinal").slideToggle();
+    $("#restart").slideToggle();
+    event.preventDefault();
 
-  event.preventDefault();
+
   }); /* SURVEY FORM */
 
 });  /* INITIAL DOC */

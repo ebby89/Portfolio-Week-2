@@ -11,9 +11,13 @@
   <body>
 <!-- START Container -->
     <div class="container">
-      <div class="jumbotron center bold">
+      <div id="headerStart" class="jumbotron center bold">
         <h1>So you want to be a Programmer?</h1>
         <p>Take the survey below to help determine which track at Epicodus would best suit your goals!</p>
+      </div>
+      <div id="headerFinal" class="jumbotron center bold">
+        <h1>Thank you for completing our survey!</h1>
+        <p>We hope to see you coding with us soon! :)</p>
       </div>
 <!-- START ***FORM*** -->
       <form id="survey">
@@ -28,8 +32,10 @@
           </div>
           <div class="form-group">
             <button id="buttonSubmit" type="button" class="btn btn-success margin-top">Start Survey!</button>
-            <button id="buttonRestart" type="button" class="btn btn-danger margin-top buttonHide">Restart Survey!</button>
           </div>
+        </div>
+        <div id="restart" class="form-group">
+          <button id="buttonRestart" type="button" class="btn btn-danger margin-top buttonHide">Restart Survey!</button>
         </div>
 
 <!-- START Q1: Frontend/Backend -->
@@ -178,7 +184,7 @@
               No, I will only be attending school.
             </label>
           </div>
-          <button id="buttonFive" class="btn btn-primary" type="submit">Find your program!</button>
+          <button id="buttonFinal" class="btn btn-primary" type="submit">Find your program!</button>
         </div>
       </form> <!-- END ***FORM*** -->
 
