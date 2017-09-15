@@ -5,183 +5,189 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.2.1.js" type="text/javascript"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
-    <title></title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Epicodus Quiz</title>
   </head>
   <body>
 <!-- START Container -->
     <div class="container">
-      <div class="main">
-        <h1 class="jumbotron center">So you want to be a Programmer?</h1>
-
+      <div class="jumbotron center bold">
+        <h1>So you want to be a Programmer?</h1>
+        <p>Take the quiz below to help determine which track at Epicodus would best suit your goals!</p>
+      </div>
 <!-- START ***FORM*** -->
-        <form id="survey">
-          <div class="form-group">
-            <label for="name">Enter your name:</label>
-            <input id="name" type="text" placeholder="First, Last">
-          </div>
-          <div class="form-group">
-            <label for="email">Enter your email:</label>
-            <input id="email" type="text" placeholder="Email@example.com">
-          </div>
+      <form id="survey">
+        <div class="form-group">
+          <label for="name">Your name:</label>
+          <input id="name" type="text" placeholder="First Last">
+        </div>
+        <div class="form-group">
+          <label for="email">Your email:</label>
+          <input id="email" type="text" placeholder="Email@example.com">
+        <div class="form-group">
+          <label class="checkbox check-style">
+            <input type="checkbox" class="check-style">I would like to receive more information about Epicodus.
+          </label>
+          <button type="submit" class="btn btn-danger">Get Info!</button>
+        </div>
 
 <!-- START Q1: Frontend/Backend -->
-          <div id="qOne"class="form-group well">
-            <h4 class="bold">Q: Are you more interested in Front-end or Back-end development?</h4>
-            <hr>
-            <dl class="dl-horizontal">
-              <p><strong class="infoColor">Front-end developers</strong> <em>focus on making things look awesome! They work primarily on layouts, navigation, colors and design.</em></p>
-              <p><strong class="infoColor">Back-end developers</strong> <em>focus on building the software that allows a business to function, and work with a wide variety of languages!</em></p>
-            </dl>
-            <hr>
-            <div class="radio">
-              <label>
-                <input type="radio" name="frontBack" value="1">
-                Front-end Development
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="frontBack" value="2">
-                Back-end Development
-              </label>
-            </div>
-            <button id="buttonOne" type="button">Next Question</button>
+        <div id="qOne"class="form-group well">
+          <h4 class="bold">Q: Are you more interested in Front-end or Back-end development?</h4>
+          <hr>
+          <dl class="dl-horizontal">
+            <p><strong class="infoColor">Front-end developers</strong> <em>focus on making things look awesome! They work primarily on layouts, navigation, colors and design.</em></p>
+            <p><strong class="infoColor">Back-end developers</strong> <em>focus on building the software that allows a business to function, and work with a wide variety of languages!</em></p>
+          </dl>
+          <hr>
+          <div class="radio">
+            <label>
+              <input type="radio" name="frontBack" value="1">
+              Front-end Development
+            </label>
           </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="frontBack" value="2">
+              Back-end Development
+            </label>
+          </div>
+          <button id="buttonOne" class="btn btn-primary" type="button">Next Question</button>
+        </div>
 
 <!-- START Q2 -->
-          <div id="qTwo" class="form-group well">
-            <h4 class="bold">Q: ?</h4>
-            <p><strong class="infoColor">Front-end developers</strong> <em>typically focus on making things look awesome! They work primarily on layouts, navigation, colors and design.</em></p>
-            <p><strong class="infoColor">Back-end developers</strong> <em>work with many different languages, and focus on building the software that allows a business to function!</em></p>
-            <hr>
-            <div class="radio">
-              <label>
-                <input type="radio" name="CHANGE ME" value="4">
-                ADD MY ANSWER
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="CHANGE ME" value="4">
-                ADD MY ANSWER
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="CHANGE ME" value="4">
-                ADD MY ANSWER
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="CHANGE ME" value="4">
-                ADD MY ANSWER
-              </label>
-            </div>
-            <button id="buttonTwo" type="button">Next Question</button>
+        <div id="qTwo" class="form-group well">
+          <h4 class="bold">Q: ?</h4>
+          <p><strong class="infoColor">Front-end developers</strong> <em>typically focus on making things look awesome! They work primarily on layouts, navigation, colors and design.</em></p>
+          <p><strong class="infoColor">Back-end developers</strong> <em>work with many different languages, and focus on building the software that allows a business to function!</em></p>
+          <hr>
+          <div class="radio">
+            <label>
+              <input type="radio" name="CHANGE ME" value="4">
+              ADD MY ANSWER
+            </label>
           </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="CHANGE ME" value="4">
+              ADD MY ANSWER
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="CHANGE ME" value="4">
+              ADD MY ANSWER
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="CHANGE ME" value="4">
+              ADD MY ANSWER
+            </label>
+          </div>
+          <button id="buttonTwo" class="btn btn-primary" type="button">Next Question</button>
+        </div>
 
 <!-- START Q3 -->
-          <div id="qThree" class="form-group well">
-            <h4 class="bold">Q: Are you more interested in Front-end or Back-end development?</h4>
-            <p><strong class="infoColor">Front-end developers</strong> <em>typically focus on making things look awesome! They work primarily on layouts, navigation, colors and design.</em></p>
-            <p><strong class="infoColor">Back-end developers</strong> <em>work with many different languages, and focus on building the software that allows a business to function!</em></p>
-            <hr>
-            <div class="radio">
-              <label>
-                <input type="radio" name="CHANGE ME" value="4">
-                ADD MY ANSWER
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="CHANGE ME" value="4">
-                ADD MY ANSWER
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="CHANGE ME" value="4">
-                ADD MY ANSWER
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="CHANGE ME" value="4">
-                ADD MY ANSWER
-              </label>
-            </div>
-            <button id="buttonThree" type="button">Next Question</button>
+        <div id="qThree" class="form-group well">
+          <h4 class="bold">Q: Are you more interested in Front-end or Back-end development?</h4>
+          <p><strong class="infoColor">Front-end developers</strong> <em>typically focus on making things look awesome! They work primarily on layouts, navigation, colors and design.</em></p>
+          <p><strong class="infoColor">Back-end developers</strong> <em>work with many different languages, and focus on building the software that allows a business to function!</em></p>
+          <hr>
+          <div class="radio">
+            <label>
+              <input type="radio" name="CHANGE ME" value="4">
+              ADD MY ANSWER
+            </label>
           </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="CHANGE ME" value="4">
+              ADD MY ANSWER
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="CHANGE ME" value="4">
+              ADD MY ANSWER
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="CHANGE ME" value="4">
+              ADD MY ANSWER
+            </label>
+          </div>
+          <button id="buttonThree" class="btn btn-primary" type="button">Next Question</button>
+        </div>
 
 <!-- START Q4 -->
-          <div id="qFour" class="form-group well">
-            <h4 class="bold">Q: Are you more interested in Front-end or Back-end development?</h4>
-            <p><strong class="infoColor">Front-end developers</strong> <em>typically focus on making things look awesome! They work primarily on layouts, navigation, colors and design.</em></p>
-            <p><strong class="infoColor">Back-end developers</strong> <em>work with many different languages, and focus on building the software that allows a business to function!</em></p>
-            <hr>
-            <div class="radio">
-              <label>
-                <input type="radio" name="CHANGE ME" value="4">
-                ADD MY ANSWER
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="CHANGE ME" value="4">
-                ADD MY ANSWER
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="CHANGE ME" value="4">
-                ADD MY ANSWER
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="CHANGE ME" value="4">
-                ADD MY ANSWER
-              </label>
-            </div>
-            <button id="buttonFour" type="button">Next Question</button>
+        <div id="qFour" class="form-group well">
+          <h4 class="bold">Q: Are you more interested in Front-end or Back-end development?</h4>
+          <p><strong class="infoColor">Front-end developers</strong> <em>typically focus on making things look awesome! They work primarily on layouts, navigation, colors and design.</em></p>
+          <p><strong class="infoColor">Back-end developers</strong> <em>work with many different languages, and focus on building the software that allows a business to function!</em></p>
+          <hr>
+          <div class="radio">
+            <label>
+              <input type="radio" name="CHANGE ME" value="4">
+              ADD MY ANSWER
+            </label>
           </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="CHANGE ME" value="4">
+              ADD MY ANSWER
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="CHANGE ME" value="4">
+              ADD MY ANSWER
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="CHANGE ME" value="4">
+              ADD MY ANSWER
+            </label>
+          </div>
+          <button id="buttonFour" class="btn btn-primary" type="button">Next Question</button>
+        </div>
 
 <!-- START Q5 -->
-          <div id="qFive" class="form-group well">
-            <h4 class="bold">Q: Are you more interested in Front-end or Back-end development?</h4>
-            <p><strong class="infoColor">Front-end developers</strong> <em>typically focus on making things look awesome! They work primarily on layouts, navigation, colors and design.</em></p>
-            <p><strong class="infoColor">Back-end developers</strong> <em>work with many different languages, and focus on building the software that allows a business to function!</em></p>
-            <hr>
-            <div class="radio">
-              <label>
-                <input type="radio" name="CHANGE ME" value="4">
-                ADD MY ANSWER
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="CHANGE ME" value="4">
-                ADD MY ANSWER
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="CHANGE ME" value="4">
-                ADD MY ANSWER
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="CHANGE ME" value="4">
-                ADD MY ANSWER
-              </label>
-            </div>
-            <button id="buttonFive" type="button">Next Question</button>
+        <div id="qFive" class="form-group well">
+          <h4 class="bold">Q: Are you more interested in Front-end or Back-end development?</h4>
+          <p><strong class="infoColor">Front-end developers</strong> <em>typically focus on making things look awesome! They work primarily on layouts, navigation, colors and design.</em></p>
+          <p><strong class="infoColor">Back-end developers</strong> <em>work with many different languages, and focus on building the software that allows a business to function!</em></p>
+          <hr>
+          <div class="radio">
+            <label>
+              <input type="radio" name="CHANGE ME" value="4">
+              ADD MY ANSWER
+            </label>
           </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="CHANGE ME" value="4">
+              ADD MY ANSWER
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="CHANGE ME" value="4">
+              ADD MY ANSWER
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="CHANGE ME" value="4">
+              ADD MY ANSWER
+            </label>
+          </div>
+          <button id="buttonFive" class="btn btn-primary" type="button">Next Question</button>
+        </div>
 
-        </form> <!-- END ***FORM*** -->
-      </div> <!-- END Main -->
+      </form> <!-- END ***FORM*** -->
     </div> <!-- END Container -->
   </body>
 </html>
