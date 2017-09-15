@@ -28,6 +28,10 @@ margin-left: 20px;
 font-weight: lighter;
 }
 
-#qOne, #qTwo, #qThree, #qFour, #qFive, .intro, .ccSS, .cSharp, .java, .rrUby {
+.margin-top {
+  margin-top: 15px;
+}
+
+#qOne, #qTwo, #qThree, #qFour, #qFive, .buttonHide, .intro, .ccSS, .cSharp, .java, .rrUby {
   display: none;
 }
