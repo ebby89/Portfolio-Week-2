@@ -12,7 +12,7 @@ The survey suggests an Epicodus track based on the users answers to five multipl
 
 ## Setup/Installation Requirements
 
-**Option 1:** Use this link, ADD LINK HERE and repeat steps 3 and 4 listed below. 
+**Option 1:** Use this link, https://ebby89.github.io/Portfolio-Week-2/index.html and repeat steps 3 and 4 listed below. 
 
 **Option 2:**
 1. Clone Portfolio-Week-2 onto desktop from GitHub using your favorite terminal.
