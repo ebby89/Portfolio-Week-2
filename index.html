@@ -31,12 +31,12 @@
             <input id="email" type="email" placeholder="Email@example.com">
           </div>
           <div class="form-group center">
-            <button id="buttonSubmit" type="button" class="btn btn-success margin-top">Start Survey!</button>
+            <button id="buttonSubmit" href="index.html" type="button" class="btn btn-success margin-top">Start Survey!</button>
           </div>
         </div>
         <div id="restart" class="form-group">
           <button id="buttonRestart" type="button" class="btn btn-danger margin-top buttonHide">Restart from Question #1!</button>
-          <button type="button" class="btn btn-warning margin-top buttonHide">Home</button>
+          <button id="buttonHome" type="button" class="btn btn-warning margin-top buttonHide">Home</button>
         </div>
 
 <!-- START Q1: Frontend/Backend -->
@@ -63,7 +63,7 @@
           <button id="buttonOne" class="btn btn-primary margin-top" type="button">Next Question</button>
         </div>
 
-<!-- START Q2 -->
+<!-- START Q2: Company type -->
         <div id="qTwo" class="form-group well">
           <h4 class="bold">Q: What is your ideal workplace environment?</h4>
           <p>There are a variety of options, each with their own benefits and drawbacks.</p>
@@ -98,7 +98,7 @@
           <button id="buttonTwo" class="btn btn-primary margin-top" type="button">Next Question</button>
         </div>
 
-<!-- START Q3 -->
+<!-- START Q3: Why coding? -->
         <div id="qThree" class="form-group well">
           <h4 class="bold">Q: Why are you interested in coding?</h4>
           <p>The all-important question!</p>
@@ -130,7 +130,7 @@
           <button id="buttonThree" class="btn btn-primary margin-top" type="button">Next Question</button>
         </div>
 
-<!-- START Q4 -->
+<!-- START Q4: Group dynamic -->
         <div id="qFour" class="form-group well">
           <h4 class="bold">Q: "Lone-wolf" or "Team-captain": What type of working/learning environment do you prefer?</h4>
           <p>Programmers can and do work in a variety of environments. You may find yourself working solo, in pairs, in teams, or a combination!</p>
@@ -162,7 +162,7 @@
           <button id="buttonFour" class="btn btn-primary margin-top" type="button">Next Question</button>
         </div>
 
-<!-- START Q5 -->
+<!-- START Q5: Work schedule -->
         <div id="qFive" class="form-group well">
           <h4 class="bold">Q: Do you plan to work while attending Epicodus?</h4>
           <p>Epicodus students attend class from 8am-5pm daily, with short homework assignments to be completed at home.</p>
@@ -189,6 +189,7 @@
         </div>
       </form> <!-- END ***FORM*** -->
 
+<!-- START all hidden responses -->
       <div class="intro backing">
         <h2 class="intro margin-bottom">You should check out the <span class="add-color">Part-Time Evening Intro</span> program!</h2>
         <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML"><img class="intro img-responsive" src="img/intro.png" alt="Image of HTML,CSS,JS logos."></a>
@@ -230,29 +231,6 @@
         <a href="http://www.wikihow.com/Not-Be-Lazy"><img class="noInput img-responsive" src="img/nothing.jpeg" alt="Image of something depressing."></a>
         <p class="noInput margin-top">Why do you torture me so?</p>
       </div>
-
-
-<!--
-<div class="row text-color">
-  <div class="col-md-6">
-    <img id="marg-bot" class="img-responsive main-img" src="img/mo-sit2.jpg" alt="Kitty sleeping in a computer chair">
-  </div>
-  <div class="col-md-6 font-size home-well">
-    <h1 class="home-center">Why Cats? One Word: <span class="name">Purrrrrfection.</span></h1>
-    <p>Do you really need any more of an explanation?</p>
-    <p>I have 3 wonderful kitties.</p>
-      <ol>
-        <li>Sophie</li>
-        <li>Mosey (pictured left)</li>
-        <li>and Buttons</li>
-      </ol>
-    <p>They'll all stupidly adorable even when they're being jerks. Buttons may still be the size of a kitten at 3 years old (due to a bone infection), but she was literally raised by dogs and has been know to ambush our plates while we're eating, and slap spoons out of my hand while attempting to give her wet food. Seriously. It's wonderful.</p>
-    <p>One of my actual long-term hobbyist goals is to convert my garage into an automated luxury cat hotel! Just call me the Crazy Cat Man!</p>
-    <a class="btn btn-primary btn-md btn-marg btn-blue" href="kitties.html" role="button">Bask in the glory of my kitties!</a>
-  </div>
-</div>
-
--->
 
     </div> <!-- END Container -->
   </body>

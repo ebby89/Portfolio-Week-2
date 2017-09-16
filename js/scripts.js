@@ -4,20 +4,34 @@ $(document).ready(function(event){   /* INITIAL DOC */
   $("button#buttonSubmit").click(function(){ /* SUBMIT BUTTON */
     $("#qOne").fadeToggle();
     $("#userInfo").slideToggle();
+    $("button#buttonHome").fadeIn();
   });
-  $("button#buttonOne").click(function(){ /* Q1 */
-    $("#qOne").slideToggle();
-    $("#qTwo").slideToggle();
-    $("button#buttonRestart").fadeIn();
-  });
-  $("button#buttonRestart").click(function(){ /* RESTART BUTTON */
-    $("#qOne").fadeIn();
-    $("button#buttonSubmit").hide();
+    $("button#buttonHome").click(function(){ /* HOME BUTTON */
+    $("#qOne").hide();
     $("#qTwo").hide();
     $("#qThree").hide();
     $("#qFour").hide();
     $("#qFive").hide();
     $("button#buttonRestart").fadeOut();
+    $("button#buttonHome").fadeOut();
+    $("#userInfo").slideToggle();
+    $("button#buttonSubmit").fadeIn();
+  });
+    $("button#buttonOne").click(function(){ /* Q1 */
+    $("#qOne").slideToggle();
+    $("#qTwo").slideToggle();
+    $("button#buttonRestart").fadeIn();
+  });
+  $("button#buttonRestart").click(function(){ /* RESTART BUTTON */
+    $("button#buttonSubmit").hide();
+    $("#qOne").fadeIn();
+    $("#qTwo").hide();
+    $("#qThree").hide();
+    $("#qFour").hide();
+    $("#qFive").hide();
+    $("button#buttonRestart").fadeOut();
+    $("button#buttonHome").fadeIn();
+
   });
   $("button#buttonTwo").click(function(){ /* Q2 */
     $("#qTwo").slideToggle();
