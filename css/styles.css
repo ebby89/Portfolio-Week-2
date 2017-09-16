@@ -21,6 +21,16 @@ hr {
 img {
   height: 300px;
   width: 600px;
+  border-style: solid;
+  border-radius: 100px;
+  border-color: black;
+  float:left;
+}
+
+.noInput {
+  height: 600px;
+  width: 800px;
+
 }
 
 .check-style {
@@ -32,6 +42,6 @@ font-weight: lighter;
   margin-top: 15px;
 }
 
-#headerFinal, #qOne, #qTwo, #qThree, #qFour, #qFive, .buttonHide, .intro, .ccSS, .cSharp, .java, .rrUby, .ppHp {
+#headerFinal, #qOne, #qTwo, #qThree, #qFour, #qFive, .buttonHide, .intro, .cCss, .cSharp, .jJava, .rRuby, .pPhp, .noInput {
   display: none;
 }

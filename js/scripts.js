@@ -54,12 +54,23 @@ $(document).ready(function(event){   /* INITIAL DOC */
       $(".intro").show();
       $(".name").text(userName);
     } else if (frontBack === 2) {
-      $(".ccSS").show();
+      $(".cCss").show();
       $(".name").text(userName);
-    } else if (scoreResult >= 5) {
-      $(".rrUby").show();
+    } else if (scoreResult <= 6) {
+      $(".cSharp").show();
+      $(".name").text(userName);
+    } else if (scoreResult === 7 || scoreResult === 8) {
+      $(".rRuby").show();
+      $(".name").text(userName);
+    } else if (scoreResult >= 9 && scoreResult <= 11) {
+      $(".jJava").show();
+      $(".name").text(userName);
+    } else if (scoreResult >= 12) {
+      $(".pPhp").show();
+      $(".name").text(userName);
+    } else {
+      $(".noInput").show();
       $(".name").text(userName);
     }
   }); /* SURVEY FORM */
-
 });  /* INITIAL DOC */
