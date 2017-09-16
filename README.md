@@ -22,7 +22,8 @@ The survey suggests an Epicodus track based on the users answers to five multipl
 
 ## Known Bugs
 
-_N/A_
+* _There are no input requirements. All buttons continue navigation regardless of whether or not you answer a question._
+* _Navbar collapse icon does not function_
 
 ## Support and contact details
 
