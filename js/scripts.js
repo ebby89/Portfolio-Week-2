@@ -1,5 +1,4 @@
 $(document).ready(function(event){   /* INITIAL DOC */
-
 /* Toggle between questions */
   $("button#buttonSubmit").click(function(){ /* SUBMIT BUTTON */
     $("#qOne").fadeToggle();
