@@ -1,28 +1,49 @@
-# _GitHub Portfolio Page_
+# _Epicodus Track Suggestion Survey_
 
-#### _Week 2 Solo Project, 9/8/17_
+#### Epicodus Week 2 - Solo Project - September 15th, 2017
 
-#### By _Kyle Ebersole_
+#### By: _**Kyle Ebersole**_
 
 ## Description
 
-_First solo javascript project. Created a survey that indicates which track a prospective Epicodus student should choose based on their responses to multiple choice questions. This project is designed to practice the basic javascript skills we learned over the course of 4 days._
+This is a web-survey created for our second solo-project at Epicodus.
+
+The survey suggests an Epicodus track based on the users answers to five multiple choice questions. Different combinations of answers result in different track suggestions. This project displays a basic level of proficiency with HTML, CSS, and Javascript, while also utilizing Bootstrap and JQuery.
 
 ## Setup/Installation Requirements
 
-*Clone Portfolio-Week-2 onto desktop from GitHub using your favorite terminal. *Open index.html file in your favorite browser.
+**Option 1:** Use this link, ADD LINK HERE and repeat steps 3 and 4 listed below. 
+
+**Option 2:**
+1. Clone Portfolio-Week-2 onto desktop from GitHub using your favorite terminal.
+2. Open index.html file in your favorite browser.
+3. Complete the quiz and click the **Submit** button.
+4. Receive your suggested track!
 
 ## Known Bugs
 
-_UNSURE YET_
+_N/A_
 
 ## Support and contact details
 
-_Feel free to contact Kyle at: kyle.m.ebersole@gmail.com_
+If you encounter an issue, or would like to provide any feedback, please feel free to contact Kyle Ebersole at: **kyle.m.ebersole@gmail.com**
 
 ## Technologies Used
 
-_*Languages Used: HTML, CSS, Javascript. *Frameworks: Bootstrap, JQuery 3.2.1. *Technologies used: Git, GitHub, Atom, and Terminal._
+**Languages Used:**
+* HTML
+* CSS
+* Javascript
+
+**Frameworks:**
+* Bootstrap
+* JQuery 3.2.1.
+
+**Technologies used:**
+* Git
+* GitHub
+* Atom
+* Terminal
 
 ### License
 
