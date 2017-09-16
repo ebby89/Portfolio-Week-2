@@ -11,31 +11,32 @@
   <body>
 <!-- START Container -->
     <div class="container">
-      <div id="headerStart" class="jumbotron center bold">
-        <h1>So you want to be a Programmer?</h1>
-        <p>Take a quick survey to determine which track at Epicodus would be a good fit!</p>
+      <div id="headerStart" class="jumbotron center bold head">
+        <h1 class="font-var">What Language Should I Learn?</h1>
+        <p class="font-size">Take a quick survey to determine which track at <a href="https://www.epicodus.com/portland/">Epicodus</a> would be a good fit!</p>
       </div>
-      <div id="headerFinal" class="jumbotron center bold">
-        <h2>Hey, <span class="name center"></span>! Thank you for completing our survey!</h2>
-        <p>Click<a href="index.html">here</a> to retake the survey. :)</p>
+      <div id="headerFinal" class="jumbotron center bold head">
+        <h2 class="font-var">Hey, <span class="name center"></span>! Thank you for completing our survey!</h2>
+        <p>Click <a href="index.html">here</a> to retake the survey. :)</p>
       </div>
 <!-- START ***FORM*** -->
       <form id="survey">
         <div id="userInfo">
-          <div class="form-group">
+          <div class="form-group center">
             <label for="name">Your name:</label>
             <input id="name" type="text" placeholder="First name">
           </div>
-          <div class="form-group">
+          <div class="form-group center">
             <label for="email">Your email:</label>
             <input id="email" type="email" placeholder="Email@example.com">
           </div>
-          <div class="form-group">
+          <div class="form-group center">
             <button id="buttonSubmit" type="button" class="btn btn-success margin-top">Start Survey!</button>
           </div>
         </div>
         <div id="restart" class="form-group">
           <button id="buttonRestart" type="button" class="btn btn-danger margin-top buttonHide">Restart from Question #1!</button>
+          <button type="button" class="btn btn-warning margin-top buttonHide">Home</button>
         </div>
 
 <!-- START Q1: Frontend/Backend -->
@@ -59,7 +60,7 @@
               Back-end Development
             </label>
           </div>
-          <button id="buttonOne" class="btn btn-primary" type="button">Next Question</button>
+          <button id="buttonOne" class="btn btn-primary margin-top" type="button">Next Question</button>
         </div>
 
 <!-- START Q2 -->
@@ -94,7 +95,7 @@
               Freelance - work from home
             </label>
           </div>
-          <button id="buttonTwo" class="btn btn-primary" type="button">Next Question</button>
+          <button id="buttonTwo" class="btn btn-primary margin-top" type="button">Next Question</button>
         </div>
 
 <!-- START Q3 -->
@@ -126,7 +127,7 @@
               I would like to improve my financial stability.
             </label>
           </div>
-          <button id="buttonThree" class="btn btn-primary" type="button">Next Question</button>
+          <button id="buttonThree" class="btn btn-primary margin-top" type="button">Next Question</button>
         </div>
 
 <!-- START Q4 -->
@@ -158,7 +159,7 @@
               I like to mix things up. Sometimes work solo, and sometimes with a partner or group.
             </label>
           </div>
-          <button id="buttonFour" class="btn btn-primary" type="button">Next Question</button>
+          <button id="buttonFour" class="btn btn-primary margin-top" type="button">Next Question</button>
         </div>
 
 <!-- START Q5 -->
@@ -184,37 +185,74 @@
               No, I will only be attending school.
             </label>
           </div>
-          <button id="buttonFinal" class="btn btn-primary" type="submit">Find your program!</button>
+          <button id="buttonFinal" class="btn btn-primary margin-top" type="submit">Find your program!</button>
         </div>
       </form> <!-- END ***FORM*** -->
 
-      <h2 class="intro">You should check out the Part-Time Evening Introductory program!</h2>
-        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML"><img class="intro" src="img/intro.png" alt="Image of HTML,CSS,JS logos."></a>
-      <p class="intro">This course is for beginners to learn the fundamentals of programming. After completing this course, you'll be able to build basic web pages and understand programming fundamentals. No coding experience is required, but computer proficiency is necessary.</p>
+      <div class="intro backing">
+        <h2 class="intro margin-bottom">You should check out the <span class="add-color">Part-Time Evening Intro</span> program!</h2>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML"><img class="intro img-responsive" src="img/intro.png" alt="Image of HTML,CSS,JS logos."></a>
+        <p class="intro margin-top">This course is for beginners to learn the fundamentals of programming. After completing this course, you'll be able to build basic web pages and understand programming fundamentals. No coding experience is required, but computer proficiency is necessary.</p>
+      </div>
 
-      <h2 class="cCss">You should check out the CSS/Design program!</h2>
-        <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS"><img class="cCss" src="img/css.png" alt="Image of CSS word-map."></a>
-      <p class="cCss">CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language.</p>
+      <div class="cCss backing">
+        <h2 class="cCss margin-bottom">You should check out the <span class="add-color">CSS/Design</span> program!</h2>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS"><img class="cCss img-responsive" src="img/css.jpg" alt="Image of CSS word-map."></a>
+        <p class="cCss margin-top">CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language.</p>
+      </div>
 
-      <h2 class="cSharp">You should check out the C#/.Net program!</h2>
-        <a href="https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169?l=Lvld4EQIC_2706218949"><img class="cSharp" src="img/csharp.png" alt="Image of C# logo."></a>
-      <p class="cSharp">C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
+      <div class="cSharp backing">
+        <h2 class="cSharp margin-bottom">You should check out the <span class="add-color">C#</span> program!</h2>
+        <a href="https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169?l=Lvld4EQIC_2706218949"><img class="cSharp img-responsive" src="img/csharp.png" alt="Image of C# logo."></a>
+        <p class="cSharp margin-top">C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
+      </div>
 
-      <h2 class="jJava">You should check out the Java/Android program!</h2>
-        <a href="https://docs.oracle.com/javase/8/"><img class="jJava" src="img/java.jpg" alt="Image of Java logo."></a>
-      <p class="jJava">Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
+      <div class="jJava backing">
+        <h2 class="jJava margin-bottom">You should check out the <span class="add-color">Java/Android</span> program!</h2>
+        <a href="https://docs.oracle.com/javase/8/"><img class="jJava img-responsive" src="img/java.png" alt="Image of Java logo."></a>
+        <p class="jJava margin-top">Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
+      </div>
 
-      <h2 class="rRuby">You should check out the Ruby/Rails program!</h2>
-        <a href="https://www.ruby-lang.org/en/"><img class="rRuby" src="img/ruby.jpg" alt="Image of Ruby logo."></a>
-      <p class="rRuby">Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
+      <div class="rRuby backing">
+        <h2 class="rRuby margin-bottom">You should check out the <span class="add-color">Ruby/Rails</span> program!</h2>
+        <a href="https://www.ruby-lang.org/en/"><img class="rRuby img-responsive" src="img/ruby.jpg" alt="Image of Ruby logo."></a>
+        <p class="rRuby margin-top">Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
+      </div>
 
-      <h2 class="pPhp">You should check out the PHP program!</h2>
-        <a href="http://php.net/manual/en/intro-whatis.php"><img class="pPhp" src="img/php.jpg" alt="Image of PHP logo."></a>
-      <p class="pPhp">PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</P>
+      <div class="pPhp backing">
+        <h2 class="pPhp margin-bottom">You should check out the <span class="add-color">PHP</span> program!</h2>
+        <a href="http://php.net/manual/en/intro-whatis.php"><img class="pPhp img-responsive" src="img/php.jpg" alt="Image of PHP logo."></a>
+        <p class="pPhp margin-top">PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</P>
+      </div>
 
-      <h2 class="noInput">You didn't answer any questions! Help me... help you...</h2>
-        <a href="http://www.wikihow.com/Not-Be-Lazy"><img class="noInput col-md-8" src="img/nothing.jpeg" alt="Image of something depressing."></a>
-      <p class="noInput col-md-4">Why do you torture me so?</p>
+      <div class="noInput backing">
+        <h2 class="noInput margin-bottom">You didn't answer any questions! <span class="add-color">Help me, help you.</span></h2>
+        <a href="http://www.wikihow.com/Not-Be-Lazy"><img class="noInput img-responsive" src="img/nothing.jpeg" alt="Image of something depressing."></a>
+        <p class="noInput margin-top">Why do you torture me so?</p>
+      </div>
+
+
+<!--
+<div class="row text-color">
+  <div class="col-md-6">
+    <img id="marg-bot" class="img-responsive main-img" src="img/mo-sit2.jpg" alt="Kitty sleeping in a computer chair">
+  </div>
+  <div class="col-md-6 font-size home-well">
+    <h1 class="home-center">Why Cats? One Word: <span class="name">Purrrrrfection.</span></h1>
+    <p>Do you really need any more of an explanation?</p>
+    <p>I have 3 wonderful kitties.</p>
+      <ol>
+        <li>Sophie</li>
+        <li>Mosey (pictured left)</li>
+        <li>and Buttons</li>
+      </ol>
+    <p>They'll all stupidly adorable even when they're being jerks. Buttons may still be the size of a kitten at 3 years old (due to a bone infection), but she was literally raised by dogs and has been know to ambush our plates while we're eating, and slap spoons out of my hand while attempting to give her wet food. Seriously. It's wonderful.</p>
+    <p>One of my actual long-term hobbyist goals is to convert my garage into an automated luxury cat hotel! Just call me the Crazy Cat Man!</p>
+    <a class="btn btn-primary btn-md btn-marg btn-blue" href="kitties.html" role="button">Bask in the glory of my kitties!</a>
+  </div>
+</div>
+
+-->
 
     </div> <!-- END Container -->
   </body>
