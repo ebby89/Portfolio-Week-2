@@ -62,7 +62,6 @@ $(document).ready(function(event){   /* INITIAL DOC */
     var userName = $("input#name").val();
 /* Multi input variable -- Ignores weeder questions Q1 & Q5 */
     var scoreResult = work + whyCode + people
-
 /* Check for overriding "Intro" or "CSS" results */
     if (schedule === 2) {
       $(".intro").show();
